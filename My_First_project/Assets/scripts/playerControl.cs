@@ -11,7 +11,7 @@ public class playerControl : MonoBehaviour
     [SerializeField]
     private CharacterController _characterController;
     [SerializeField]
-    private float _speed = 100f;
+    private float _speed = 40f;
 
     private float _x, _y;
     public void move(InputAction.CallbackContext context)
