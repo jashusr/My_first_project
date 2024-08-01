@@ -28,8 +28,8 @@ public class FPP_TPP_cam : MonoBehaviour
     void Update()
     {
         playerx = target.position.x;
-        playery = target.position.y;
-        playerz = target.position.z;
+        playery = target.position.y+1;
+        playerz = target.position.z+0.5f;
 
         playerrotationx = target.rotation.x;
         playerrotationy = target.rotation.y;
