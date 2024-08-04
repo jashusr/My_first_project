@@ -26,28 +26,9 @@ public class playerControl1 : MonoBehaviour
         //RaycastVisualise(float.MaxValue);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        MovePlayer(GetPlayerInput());
-    }
-
-    private Vector3 GetPlayerInput()
-    {
-        _moveInput.x = Input.GetAxisRaw("Horizontal");
-        _moveInput.y = Input.GetAxisRaw("Vertical");
-
-        Vector3 move = new Vector3(_moveInput.x, 0, _moveInput.y);
-        return move;
-    }
-
-    private void MovePlayer(Vector3 move)
-    {
-        if (_moveInput != Vector2.zero)
-        {
-            _rb.AddForce(_moveSpeed * Time.fixedDeltaTime * move, ForceMode.Impulse);
-        }
-
-        return;
+        
     }
 
     private float RaycastVisualise(float maxDistance)
