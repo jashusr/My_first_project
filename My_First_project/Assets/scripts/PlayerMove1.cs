@@ -14,6 +14,9 @@ public class PlayerMove : MonoBehaviour
     private float jumphight = 8f;
     [SerializeField]
     private float gravity = 0f;
+    [SerializeField]
+    private float jumpSpeed;
+
 
     private Rigidbody rb;
     private bool isJumping;
@@ -67,11 +70,7 @@ public class PlayerMove : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumphight, ForceMode.Impulse);
             isJumping = true;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.visible = true;
+            
         }
 
     }

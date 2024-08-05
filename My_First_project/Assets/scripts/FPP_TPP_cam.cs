@@ -9,7 +9,6 @@ public class FPP_TPP_cam : MonoBehaviour
     Transform mainCam, playerBody;
 
     float Rotationx = 0f;
-    float Rotationy = 0f;
 
     public float senstivity = 100;
 
